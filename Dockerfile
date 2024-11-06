@@ -1,8 +1,8 @@
-FROM misotolar/alpine:3.20.0
+FROM misotolar/alpine:3.20.3
 
 LABEL maintainer="michal@sotolar.com"
 
-ENV UNOSERVER_VERSION=2.1
+ENV UNOSERVER_VERSION=3.0.1
 
 ENV INTERFACE=127.0.0.1
 ENV PORT=2003
