@@ -1,4 +1,4 @@
-FROM misotolar/alpine:3.20.3
+FROM misotolar/alpine:3.21.0
 
 LABEL maintainer="michal@sotolar.com"
 
