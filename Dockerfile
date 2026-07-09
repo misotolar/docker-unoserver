@@ -36,9 +36,11 @@ RUN set -ex; \
         /var/tmp/* \
         /tmp/*
 
-COPY resources/fontconfig.conf /etc/fonts/local.conf
 COPY resources/javasettings.xml /usr/lib/libreoffice/share/config/javasettings_Linux_X86_64.xml
 COPY resources/entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY resources/fontconfig.conf /etc/fonts/local.conf
+
+VOLUME /usr/local/fonts
 
 STOPSIGNAL SIGKILL
 ENTRYPOINT ["entrypoint.sh"]
